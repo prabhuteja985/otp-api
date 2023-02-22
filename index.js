@@ -61,6 +61,7 @@ app.post('/verify', (req, res) => {
     let email = req.body.email;
     if (savedOTPS[email] == otprecived) {
         res.send("Verfied");
+        window.location.href="http://siloamglorymission.22web.org/admin-main/admin/home.php";
     }
     else {
         res.status(500).send("Invalid OTP")
