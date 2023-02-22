@@ -32,7 +32,7 @@ app.post('/sendotp', (req, res) => {
     var options = {
         from: 'prabhuteja.iot@gmail.com',
         to: `${email}`,
-        subject: "Testing node emails",
+        subject: "Verify OTP",
         html: `<p>Enter the otp: ${otp} to verify your email address</p>`
 
     };
