@@ -47,7 +47,7 @@ app.post('/sendotp', (req, res) => {
                 setTimeout(
                     () => {
                         delete savedOTPS.email
-                    }, 60000
+                    }, 20000
                 )
                 res.send("sent otp")
             }
