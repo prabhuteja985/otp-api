@@ -33,7 +33,7 @@ app.post('/sendotp', (req, res) => {
         from: 'prabhuteja.iot@gmail.com',
         to: `${email}`,
         subject: "Verify OTP",
-        html: `<p>Enter the otp: ${otp} to verify your email address</p>`
+        html: `<p>Enter the otp: <b>${otp}</b> to verify your email address</p>`
 
     };
     transporter.sendMail(
