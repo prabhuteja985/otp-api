@@ -4,8 +4,7 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 app.use(cors('*'));
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
-var nm = require('nodemailer');
+app.use(bodyParse
 let savedOTPS = {
 
 };
